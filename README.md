@@ -1,3 +1,13 @@
+#### Execution and Hosting
+- All tasks related to this feature have been successfully completed and executed.
+- Below are snapshots showcasing the hosted application, Docker image, and running container.
+
+  ![Hosted Application Snapshot](./Web_hosting_app.PNG))
+  ![Docker Image Snapshot](./docker_image.PNG)
+  ![Docker Container Snapshot](./docker_container.PNG)
+
+
+
 # Project Branches Overview
 
 ## Branches
@@ -61,13 +71,3 @@ This branch focuses on configuring ports and host settings in Vite.js.
 #### Vite Port and Host Configuration
 - The `server` configuration in `vite.config.js` is updated to allow custom ports and host settings.
 - This enables access to the Vite server from different machines in a network.
-
-#### Execution and Hosting
-- All tasks related to this feature have been successfully completed and executed.
-- Below are snapshots showcasing the hosted application, Docker image, and running container.
-
-  ![Hosted Application Snapshot](./Web_hosting_app.PNG))
-  ![Docker Image Snapshot](./docker_image.PNG)
-  ![Docker Container Snapshot](./docker_container.PNG)
-
--

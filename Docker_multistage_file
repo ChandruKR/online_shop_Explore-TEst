@@ -6,16 +6,16 @@ WORKDIR /app
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
-# ✅ Install ALL dependencies (including Vite)
+#  Install ALL dependencies (including Vite)
 RUN npm install
 
 # Copy the rest of the source code
 COPY . .
 
-# ✅ Increase memory to prevent build issues
+# Increase memory to prevent build issues
 ENV NODE_OPTIONS="--max-old-space-size=2048"
 
-# ✅ Run the Vite build process
+# Run the Vite build process
 RUN npm run build
 
 # --- Runtime Stage (Distroless) ---
@@ -23,7 +23,7 @@ FROM gcr.io/distroless/nodejs18
 
 WORKDIR /app
 
-# ✅ Copy only necessary files for production
+# Copy only necessary files for production
 COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./

@@ -15,4 +15,4 @@ export default defineConfig({
       '.amazonaws.com' // allow all AWS instances
     ]
   },
-})
+});
